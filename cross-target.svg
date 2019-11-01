@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .black-line {
+                stroke: #000;
+                stroke-width: 15px;
+                fill: none;
+                opacity: 0.3;
+            }
+            .white-line {
+                stroke: #fff;
+                stroke-width: 5px;
+                fill: none;
+            }
+            .thin-line {
+                stroke-width: 2px;
+            }
+            .black-polygon {
+                fill: #000;
+            }
+        </style>
+        <g id="unit">
+          <line class="black-line" x1="0" y1="-50" x2="0" y2="-10"/>
+          <line class="white-line" x1="0" y1="-50" x2="0" y2="-10"/>
+          <line class="white-line thin-line" x1="0" y1="-50" x2="0" y2="-4"/>
+          <polygon class="black-polygon" points="0,-28 -12,-16 -12,0 12,0 12,-16" transform="translate(0 -17)"/>
+        </g>
+    </defs>
+    <!-- <rect width="100" height="100" style="fill:rgb(80,80,255);" /> -->
+    <use xlink:href="#unit" transform="translate(50 50)"/>
+    <use xlink:href="#unit" transform="rotate(90) translate(50 -50)"/>
+    <use xlink:href="#unit" transform="rotate(180) translate(-50 -50)"/>
+    <use xlink:href="#unit" transform="rotate(-90) translate(-50 50)"/>
+</svg>
